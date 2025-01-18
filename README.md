@@ -15,29 +15,29 @@ This library provides an easy way to control a stepper motor using an A4988 driv
 2. Open your Arduino IDE.
 3. In the Arduino IDE, go to `Sketch > Include Library > Add .ZIP Library` and select the library file.
 
-Functions
-StepperMotor(int stepPin, int dirPin, int enPin, int delayTime)
+##Functions
+`StepperMotor(int stepPin, int dirPin, int enPin, int delayTime)`
 Constructor that initializes the stepper motor with specified pin numbers and delay time.
 
 stepPin: The pin connected to the STEP input of the A4988 driver.
 dirPin: The pin connected to the DIR input of the A4988 driver.
 enPin: The pin connected to the ENABLE input of the A4988 driver.
 delayTime: The delay time (in milliseconds) between each step, controlling the motor's speed.
-void begin()
+`void begin()`
 Sets the pins for the stepper motor driver to output mode. Call this function in the setup() section of your Arduino sketch.
 
-void rotate(int steps)
+`void rotate(int steps)`
 Rotates the stepper motor by the specified number of steps. Positive values rotate the motor clockwise, while negative values rotate it counterclockwise.
 
 steps: The number of steps to rotate. A positive value rotates the motor clockwise, while a negative value rotates it counterclockwise.
-void enable()
+`void enable()`
 Enables the stepper motor driver by setting the ENABLE pin to LOW.
 
-void disable()
+`void disable()`
 Disables the stepper motor driver by setting the ENABLE pin to HIGH.
 
-void step()
+`void step()`
 Performs a single step in the rotation, with a delay between high and low states of the STEP pin to control speed.
 
-License
+##License
 This library is open-source and available under the MIT License.
