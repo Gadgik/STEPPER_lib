@@ -23,13 +23,14 @@ stepPin: The pin connected to the STEP input of the A4988 driver.
 dirPin: The pin connected to the DIR input of the A4988 driver.
 enPin: The pin connected to the ENABLE input of the A4988 driver.
 delayTime: The delay time (in milliseconds) between each step, controlling the motor's speed.
+
 `void begin()`
 Sets the pins for the stepper motor driver to output mode. Call this function in the setup() section of your Arduino sketch.
 
 `void rotate(int steps)`
 Rotates the stepper motor by the specified number of steps. Positive values rotate the motor clockwise, while negative values rotate it counterclockwise.
-
 steps: The number of steps to rotate. A positive value rotates the motor clockwise, while a negative value rotates it counterclockwise.
+
 `void enable()`
 Enables the stepper motor driver by setting the ENABLE pin to LOW.
 
